@@ -3,43 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.goodleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <sсript src="script.js" defer></sсript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Задание 8</title>
 </head>
 <body>
-    <a href="#popup">Форма</a>
-    <div id="popup" class="popup">
-        <div class="popup_body">
-            <div class="popup_content">
-                <a href="" class="popup_close">X</a>
-                <div class="form">
-                    <form class="ajaxForm" action="https://formcarry.com/s/a4nsVGvnu53" method="POST" id="form">
-                        <h1 class="form_title">Отправка данных на почту</h1>
-                        <div class="form_item">
-                            <label for="formName" class="form_label">Имя*:</label>
-                            <input id="formName" type="text" name="name" class="form_input_req">
+<a href="#popup">Форма</a>
+<div id="popup" class="popup">
+    <div class="popup_body">
+        <div class="popup_content">
+            <div class="form">
+                <form class="ajaxForm" action="https://formcarry.com/s/a4nsVGvnu53" method="POST" accept-charset="UTF-8" id="form">
+                    <a href="#" class="popup_close">X</a>
+                    <h1 class="form_title">Отправка данных на почту</h1>
+                    <div class="form_item">
+                        <label for="formName" class="form_label">Имя*:</label>
+                        <input id="formName" type="text" name="name" class="form_input_req" required>
+                    </div>
+                    <div class="form_item">
+                        <label for="formEmail" class="form_label">E-mail*:</label>
+                        <input id="formEmail" type="text" name="email" class="form_input_req_email" required>
+                    </div>
+                    <div class="form_item">
+                        <label for="formMessage" class="form_label">Сообщение:</label>
+                        <textarea name="message" id="formMessage" class="form_input"></textarea>
+                    </div>
+                    <div class="form_item">
+                        <div class="checkbox">
+                            <input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input_req" required>
+                            <label for="formAgreement" class="checkbox_label"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="">Условием</a>*</span></label>
                         </div>
-                        <div class="form_item">
-                            <label for="formEmail" class="form_label">E-mail*:</label>
-                            <input id="formEmail" type="text" name="email" class="form_input_req_email">
-                        </div>
-                        <div class="form_item">
-                            <label for="formMessage" class="form_label">Сообщение:</label>
-                            <textarea name="message" id="formMessage" class="form_input"></textarea>
-                        </div>
-                        <div class="form_item">
-                            <div class="checkbox">
-                                <input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input_req">
-                                <label for="formAgreement" class="checkbox_label"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="">Условием</a>*</span></label>
-                            </div>
-                        </div>
-                        <button type="submit" class="form_button">Отправить</button>
-                    </form>
-                </div>
+                    </div>
+                    <button type="submit" class="form_button">Отправить</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
